@@ -19,6 +19,7 @@ const Login = () => {
 
   if (user) {
     console.log("Usuário Logado: ", user);
+    window.location.href = "/"
   }
 
   if (error) {
@@ -51,7 +52,11 @@ const Login = () => {
             Clique aqui
           </Link>
         </p>
-        <Button onClick={handleSignIn}>Login</Button>
+        {loading === true  ? (
+          <Button onClick={handleSignIn}>Fazendo login...</Button>
+        ) : (
+          <Button onClick={handleSignIn}>Login</Button>
+        )}
       </div>
     </section>
   );
