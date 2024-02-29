@@ -10,7 +10,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword,  loading] =
     useCreateUserWithEmailAndPassword(auth);
 
   function handleSignOut() {
@@ -42,7 +42,7 @@ const Register = () => {
             Clique aqui
           </Link>
         </p>
-        {loading === true  ? (
+        {loading  ? (
           <Button onClick={handleSignOut}>Carregando</Button>
         ) : (
           <Button onClick={handleSignOut}>Criar conta</Button>
