@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID
+  apiKey: "AIzaSyD7iNdakhpvwVO9zj17bCkU3svOWgBCKqQ",
+  authDomain: "taskify-f14e4.firebaseapp.com",
+  projectId: "taskify-f14e4",
+  storageBucket: "taskify-f14e4.appspot.com",
+  messagingSenderId: "671740710515",
+  appId: "1:671740710515:web:8381df70cd2dbd1f892406"
 };
 
 // Initialize Firebase
